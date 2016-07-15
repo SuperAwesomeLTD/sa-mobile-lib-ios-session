@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SASession_Example' do
+  pod 'SASession', :path => '../'
+
+  target 'SASession_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

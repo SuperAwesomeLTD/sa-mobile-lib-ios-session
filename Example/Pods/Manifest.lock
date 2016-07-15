@@ -1,0 +1,16 @@
+PODS:
+  - SASession (0.1.0)
+
+DEPENDENCIES:
+  - SASession (from `../`)
+
+EXTERNAL SOURCES:
+  SASession:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SASession: 2c48d16bf07e9092276fc410957b0e55934863f3
+
+PODFILE CHECKSUM: 7bd0e31201fbfb1eb7c26614f025531acecc6e4b
+
+COCOAPODS: 1.0.1

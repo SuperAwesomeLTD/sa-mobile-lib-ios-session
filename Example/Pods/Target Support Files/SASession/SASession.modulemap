@@ -1,0 +1,6 @@
+framework module SASession {
+  umbrella header "SASession-umbrella.h"
+
+  export *
+  module * { export * }
+}
