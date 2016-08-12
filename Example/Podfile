@@ -1,11 +1,5 @@
-use_frameworks!
+platform :ios, '7.0'
 
 target 'SASession_Example' do
   pod 'SASession', :path => '../'
-
-  target 'SASession_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end
