@@ -17,6 +17,8 @@
 @interface SASession ()
 @property (nonatomic, strong) NSString *baseUrl;
 @property (nonatomic, assign) BOOL testEnabled;
+@property (nonatomic, strong) NSString *version;
+@property (nonatomic, assign) NSInteger dauId;
 @property (nonatomic, assign) NSInteger configuration;
 @end
 
@@ -24,9 +26,10 @@
 
 - (id) init {
     if (self = [super init]) {
-        // setup a base configuration
         [self setConfigurationProduction];
         [self setTestDisabled];
+        [self setDauId:0];
+        [self setVersion:@"0.0.0"];
     }
     return self;
 }
@@ -63,6 +66,14 @@
     _testEnabled = testEnabled;
 }
 
+- (void) setDauId:(NSInteger)dauId {
+    _dauId = dauId;
+}
+
+- (void) setVersion:(NSString *)version {
+    _version = version;
+}
+
 // getters
 
 - (NSString*) getBaseUrl {
@@ -71,6 +82,14 @@
 
 - (BOOL) isTestEnabled {
     return _testEnabled;
+}
+
+- (NSInteger) getDauId {
+    return _dauId;
+}
+
+- (NSString*) getVersion {
+    return _version;
 }
 
 - (NSInteger) getConfiguration {
