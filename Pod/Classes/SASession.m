@@ -17,29 +17,16 @@
 @interface SASession ()
 @property (nonatomic, strong) NSString *baseUrl;
 @property (nonatomic, assign) BOOL testEnabled;
-@property (nonatomic, strong) NSString *version;
-@property (nonatomic, assign) NSInteger dauId;
 @property (nonatomic, assign) NSInteger configuration;
 @end
 
 @implementation SASession
 
-+ (instancetype) getInstance {
-    static SASession *sharedMyManager = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        sharedMyManager = [[self alloc] init];
-    });
-    return sharedMyManager;
-}
-
 - (id) init {
     if (self = [super init]) {
-        _baseUrl = PRODUCTION_URL;
-        _testEnabled = false;
-        _version = @"0.0.0";
-        _dauId = 0;
-        _configuration = CONFIGURATION_PRODUCTION;
+        // setup a base configuration
+        [self setConfigurationProduction];
+        [self setTestDisabled];
     }
     return self;
 }
@@ -76,14 +63,6 @@
     _testEnabled = testEnabled;
 }
 
-- (void) setDauId:(NSInteger)dauId {
-    _dauId = dauId;
-}
-
-- (void) setVersion:(NSString *)version {
-    _version = version;
-}
-
 // getters
 
 - (NSString*) getBaseUrl {
@@ -92,14 +71,6 @@
 
 - (BOOL) isTestEnabled {
     return _testEnabled;
-}
-
-- (NSInteger) getDauId {
-    return _dauId;
-}
-
-- (NSString*) getVersion {
-    return _version;
 }
 
 - (NSInteger) getConfiguration {

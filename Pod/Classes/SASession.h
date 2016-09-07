@@ -10,9 +10,6 @@
 
 @interface SASession : NSObject
 
-// singleton instance (instead of init)
-+ (instancetype) getInstance;
-
 // setters
 - (void) setConfiguration:(NSInteger) configuration;
 - (void) setConfigurationProduction;
@@ -20,14 +17,10 @@
 - (void) setTestEnabled;
 - (void) setTestDisabled;
 - (void) setTest:(BOOL) testEnabled;
-- (void) setDauId:(NSInteger)dauId;
-- (void) setVersion:(NSString *)version;
 
 // getters
 - (NSString*) getBaseUrl;
 - (BOOL) isTestEnabled;
-- (NSInteger) getDauId;
-- (NSString*) getVersion;
 - (NSInteger) getConfiguration;
 
 @end
