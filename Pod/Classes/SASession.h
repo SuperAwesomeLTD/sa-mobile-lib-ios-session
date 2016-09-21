@@ -40,5 +40,6 @@ typedef NS_ENUM(NSInteger, SAConfiguration) {
 - (NSString*) getDevice;
 - (NSInteger) getConnectivityType;
 - (NSInteger) getCachebuster;
+- (NSString*) getUserAgent;
 
 @end

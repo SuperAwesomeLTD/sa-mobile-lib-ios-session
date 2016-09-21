@@ -24,6 +24,7 @@
 @property (nonatomic, strong) NSString *lang;
 @property (nonatomic, strong) NSString *device;
 @property (nonatomic, assign) NSInteger connectivityType;
+@property (nonatomic, strong) NSString *userAgent;
 @end
 
 @implementation SASession
@@ -39,6 +40,7 @@
         _bundleId = [[NSBundle mainBundle] bundleIdentifier];
         _appName = [SAUtils encodeURI:[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleName"]];
         _device = [SAUtils getSystemSize] == size_mobile ? @"mobile" : @"tablet";
+        _userAgent = [SAUtils getUserAgent];
         
         _lang = @"none";
         NSArray *languages = [NSLocale preferredLanguages];
@@ -137,6 +139,10 @@
 
 - (NSInteger) getCachebuster {
     return [SAUtils getCachebuster];
+}
+
+- (NSString*) getUserAgent {
+    return _userAgent;
 }
 
 @end
