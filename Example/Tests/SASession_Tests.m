@@ -208,7 +208,7 @@
     NSString *expectedBundleId = @"org.cocoapods.demo.SASession-Example";
     NSString *expectedAppName = @"SASession_Example";
     NSString *expectedLang = @"en_US";
-    NSString *expectedDevice = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ? @"tablet" : @"mobile";
+    NSString *expectedDevice = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ? @"tablet" : @"phone";
     NSInteger expectedConnectivity = 0; // wifi
     
     
