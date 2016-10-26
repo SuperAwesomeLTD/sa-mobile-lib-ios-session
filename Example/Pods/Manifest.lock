@@ -1,7 +1,7 @@
 PODS:
-  - SASession (0.2.0):
-    - SAUtils (= 1.4.2)
-  - SAUtils (1.4.2)
+  - SASession (0.2.2):
+    - SAUtils (= 1.4.3)
+  - SAUtils (1.4.3)
 
 DEPENDENCIES:
   - SASession (from `../`)
@@ -11,8 +11,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  SASession: 17f2ef9d99cd9cd0166414d6b71e5f4f703f650f
-  SAUtils: 0f090cec466d979581ee03f82303868a4c57fef8
+  SASession: f6c2bb4186d3184086296f29fc93d35bafe864aa
+  SAUtils: 287f4a9eaf42897fb6b5f42e40948ae572be2c5f
 
 PODFILE CHECKSUM: dcf96e4aa66583dca1b18bc027521c9f3ce54474
 

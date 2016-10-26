@@ -42,7 +42,7 @@
         // get the bundle id, app name, etc, things that might not change
         _bundleId = [[NSBundle mainBundle] bundleIdentifier];
         _appName = [SAUtils encodeURI:[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleName"]];
-        _device = [SAUtils getSystemSize] == size_mobile ? DEVICE_PHONE : DEVICE_TABLET;
+        _device = [SAUtils getSystemSize] == size_phone ? DEVICE_PHONE : DEVICE_TABLET;
         _userAgent = [SAUtils getUserAgent];
         
         _lang = @"none";
