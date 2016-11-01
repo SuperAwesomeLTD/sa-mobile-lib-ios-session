@@ -11,6 +11,7 @@
 
 // import session
 #import "SASession.h"
+#import "SACapper.h"
 
 // define some test constants
 #define TEST_PRODUCTION_URL @"https://ads.superawesome.tv/v2"
@@ -18,6 +19,7 @@
 
 @interface SASession_Tests : XCTestCase
 @property (nonatomic, strong) SASession *session;
+@property (nonatomic, strong) SACapper *capper;
 @end
 
 @implementation SASession_Tests
