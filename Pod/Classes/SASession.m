@@ -46,11 +46,25 @@
         _userAgent = [SAUtils getUserAgent];
         
         _lang = @"none";
-        NSArray *languages = [NSLocale preferredLanguages];
-        if ([languages count] > 0) {
-            _lang = [[languages firstObject] stringByReplacingOccurrencesOfString:@"-" withString:@"_"];;
+        
+        NSString *shortLang = nil;
+        NSString *locale = nil;
+        
+        NSBundle *main = [NSBundle mainBundle];
+        if (main != nil) {
+            NSArray *localizations = [main preferredLocalizations];
+            if ([localizations count] > 0) {
+                shortLang = [localizations objectAtIndex:0];
+            }
+        }
+        NSLocale *cLocale = [NSLocale currentLocale];
+        if (cLocale != nil) {
+            locale = [[cLocale objectForKey:NSLocaleCountryCode] uppercaseString];
         }
         
+        if (shortLang && locale) {
+            _lang = [NSString stringWithFormat:@"%@_%@", shortLang, locale];
+        }
         
         // get the Dau Id
         SACapper *capper = [[SACapper alloc] init];
