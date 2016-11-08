@@ -227,7 +227,6 @@
     NSInteger cachebuster = [_session getCachebuster];
     NSString *userAgent = [_session getUserAgent];
     NSInteger dauId = [_session getDauId];
-    NSLog(@"DAU ID: %ld", (long)dauId);
     
     // assert
     XCTAssertEqual(config, expectedConfig);
