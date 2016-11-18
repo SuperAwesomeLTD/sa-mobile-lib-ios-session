@@ -104,7 +104,7 @@
 }
 
 
-- (void) setDauId:(NSInteger)dauId {
+- (void) setDauId:(NSUInteger)dauId {
     _dauId = dauId;
 }
 

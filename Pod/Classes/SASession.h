@@ -25,7 +25,7 @@ typedef NS_ENUM(NSInteger, SAConfiguration) {
 - (void) disableTestMode;
 - (void) setTestMode:(BOOL) testEnabled;
 // others
-- (void) setDauId:(NSInteger)dauId;
+- (void) setDauId:(NSUInteger)dauId;
 - (void) setVersion:(NSString *)version;
 
 // getters
