@@ -226,7 +226,7 @@
     NSInteger connectivity = [_session getConnectivityType];
     NSInteger cachebuster = [_session getCachebuster];
     NSString *userAgent = [_session getUserAgent];
-    NSInteger dauId = [_session getDauId];
+    NSUInteger dauId = [_session getDauId];
     
     // assert
     XCTAssertEqual(config, expectedConfig);

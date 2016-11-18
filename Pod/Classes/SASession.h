@@ -31,7 +31,7 @@ typedef NS_ENUM(NSInteger, SAConfiguration) {
 // getters
 - (NSString*) getBaseUrl;
 - (BOOL)      getTestMode;
-- (NSInteger) getDauId;
+- (NSUInteger) getDauId;
 - (NSString*) getVersion;
 - (SAConfiguration) getConfiguration;
 - (NSString*) getBundleId;

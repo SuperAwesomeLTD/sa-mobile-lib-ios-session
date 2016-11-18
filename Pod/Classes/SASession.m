@@ -20,7 +20,7 @@
 @property (nonatomic, strong) NSString *baseUrl;
 @property (nonatomic, assign) BOOL testEnabled;
 @property (nonatomic, strong) NSString *version;
-@property (nonatomic, assign) NSInteger dauId;
+@property (nonatomic, assign) NSUInteger dauId;
 @property (nonatomic, assign) SAConfiguration configuration;
 @property (nonatomic, strong) NSString *bundleId;
 @property (nonatomic, strong) NSString *appName;
@@ -122,7 +122,7 @@
     return _testEnabled;
 }
 
-- (NSInteger) getDauId {
+- (NSUInteger) getDauId {
     return _dauId;
 }
 
