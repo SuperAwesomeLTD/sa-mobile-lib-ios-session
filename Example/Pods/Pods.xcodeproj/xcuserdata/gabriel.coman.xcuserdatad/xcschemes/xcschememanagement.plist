@@ -8,54 +8,41 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
 		</dict>
 		<key>Pods-SASession_Tests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
-		</dict>
-		<key>SASession 2.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>5</integer>
 		</dict>
 		<key>SASession.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
 		</dict>
 		<key>SAUtils.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>4</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0107EEB7EEBCD692C98DAE458D53F14C</key>
+		<key>2BC918FA7BF9826CCDB8EC63F4913D29</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>026617B5B67B7BCA785926C583B26B66</key>
+		<key>3B96944DDF38EE7A46BF5F1A4B499F99</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6380B50A1645179D9D8179B0F08AAC73</key>
+		<key>9F7224B5C56814556D40E23A3FB022DF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B027CCEE21725A017AF32872CD1A31A6</key>
+		<key>ABBE34C6D2E268B7258E6EAABF43553E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
