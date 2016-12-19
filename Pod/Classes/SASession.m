@@ -8,7 +8,14 @@
 
 #import "SASession.h"
 #import "SACapper.h"
+
+#if defined(__has_include)
+#if __has_include(<SAUtils/SAUtils.h>)
+#import <SAUtils/SAUtils.h>
+#else 
 #import "SAUtils.h"
+#endif
+#endif
 
 #define PRODUCTION_URL @"https://ads.superawesome.tv/v2"
 #define STAGING_URL @"https://ads.staging.superawesome.tv/v2"
