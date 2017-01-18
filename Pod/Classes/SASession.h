@@ -21,7 +21,7 @@ typedef NS_ENUM(NSInteger, SAConfiguration) {
  * starting from an integer value.
  *
  * @param configuration an int that will get translated to an enum
- * @return              a new SAConfiguration object. If configuration == 0
+ * @return              a new SAConfiguration var. If configuration == 0
  *                      then return PRODUCTION value, else return STAGING
  */
 static inline SAConfiguration getConfigurationFromInt (int configuration) {

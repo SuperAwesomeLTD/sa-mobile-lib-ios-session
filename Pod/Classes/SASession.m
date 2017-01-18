@@ -54,6 +54,7 @@
         _appName = [SAUtils encodeURI:[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleName"]];
         _device = [SAUtils getSystemSize] == size_phone ? DEVICE_PHONE : DEVICE_TABLET;
         _userAgent = [SAUtils getUserAgent];
+        _connectivityType = [SAUtils getNetworkConnectivity];
         
         // get the language
         _lang = @"none";

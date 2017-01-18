@@ -12,6 +12,7 @@
 // import session
 #import "SASession.h"
 #import "SACapper.h"
+#import "SAUtils.h"
 
 // define some test constants
 #define TEST_PRODUCTION_URL @"https://ads.superawesome.tv/v2"
@@ -211,8 +212,7 @@
     NSString *expectedAppName = @"SASession_Example";
     NSString *expectedLang = @"en_US";
     NSString *expectedDevice = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ? @"tablet" : @"phone";
-    NSInteger expectedConnectivity = 0; // wifi
-    
+    NSInteger expectedConnectivity = [SAUtils getNetworkConnectivity]; // wifi
     
     // then
     SAConfiguration config = [_session getConfiguration];
