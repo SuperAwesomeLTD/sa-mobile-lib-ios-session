@@ -1,6 +1,6 @@
 {
   "name": "SASession",
-  "version": "0.3.5",
+  "version": "0.3.7",
   "summary": "Library that holds session data for SA",
   "description": "This library holds session data like production / conf, etc for SA",
   "homepage": "https://github.com/SuperAwesomeLTD/sa-mobile-lib-ios-session",
@@ -13,14 +13,14 @@
   },
   "source": {
     "git": "https://github.com/SuperAwesomeLTD/sa-mobile-lib-ios-session.git",
-    "tag": "0.3.5"
+    "tag": "0.3.7"
   },
   "platforms": {
-    "ios": "7.0"
+    "ios": "8.0"
   },
   "dependencies": {
     "SAUtils": [
-      "1.5.2"
+      "1.5.3"
     ]
   },
   "source_files": "Pod/Classes/**/*"

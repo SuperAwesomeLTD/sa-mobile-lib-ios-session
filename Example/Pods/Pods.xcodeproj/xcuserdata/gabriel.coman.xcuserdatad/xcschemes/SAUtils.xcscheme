@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'ABBE34C6D2E268B7258E6EAABF43553E'
-               BlueprintName = 'SAUtils'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libSAUtils.a'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "ABBE34C6D2E268B7258E6EAABF43553E"
+               BlueprintName = "SAUtils"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "libSAUtils.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
