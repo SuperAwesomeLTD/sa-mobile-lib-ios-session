@@ -19,6 +19,6 @@ Pod::Spec.new do |s|
 	:tag => '0.3.8' 
   }
   s.ios.deployment_target = '8.0'
-  s.dependency 'SAUtils', '1.5.4'
+  s.dependency 'SAUtils', '1.5.5'
   s.source_files = 'Pod/Classes/**/*'
 end

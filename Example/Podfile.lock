@@ -1,19 +1,23 @@
 PODS:
   - SASession (0.3.8):
-    - SAUtils (= 1.5.4)
-  - SAUtils (1.5.4)
+    - SAUtils (= 1.5.5)
+  - SAUtils (1.5.5)
 
 DEPENDENCIES:
   - SASession (from `../`)
 
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - SAUtils
+
 EXTERNAL SOURCES:
   SASession:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  SASession: 39fedc426cc27f5c644f3552490f3652504be8d6
-  SAUtils: 225cdfaee9cb68184d5d27d7ff1119e1150d3398
+  SASession: 5ff22cbb312356fa2a4ff921bedb0e032d8beec1
+  SAUtils: 95e06baec2636bfe494d9f8a43ec4def6fb28229
 
 PODFILE CHECKSUM: 9755530b22c9dc48a74d057359843e255e747590
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.0
