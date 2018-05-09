@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'SASession'
-  s.version = '1.0.0'
+  s.version = '1.1.0'
   s.summary = 'Library that holds session data for SA'
   s.description = <<-DESC
       This library holds session data like production / conf, etc for SA
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.source = { 
 	:git => 'https://github.com/SuperAwesomeLTD/sa-mobile-lib-ios-session.git', 
 	:branch => 'master',
-	:tag => '1.0.0' 
+	:tag => '1.1.0' 
   }
   s.ios.deployment_target = '8.0'
   s.dependency 'SAUtils', '1.5.5'

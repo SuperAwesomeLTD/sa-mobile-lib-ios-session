@@ -21,6 +21,7 @@ static inline SAConfiguration getConfigurationFromInt (int configuration) {
 
 typedef NS_ENUM(NSInteger, SARTBPosition) {
     POS_ABOVE_THE_FOLD  = 1,
+    POS_BELOW_THE_FOLD  = 3,
     POS_FULLSCREEN      = 7
 };
 

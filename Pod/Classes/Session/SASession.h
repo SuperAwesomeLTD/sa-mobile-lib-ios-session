@@ -27,6 +27,8 @@
 - (void) setStartDelay: (SARTBStartDelay) startDelay;
 - (void) setWidth: (NSInteger) width;
 - (void) setHeight: (NSInteger) height;
+- (void) setLanguage: (NSString*) lang;
+- (void) setLanguage: (NSString*) langage forLocale: (NSLocale*) locale;
 
 - (NSString*) getBaseUrl;
 - (BOOL) getTestMode;
