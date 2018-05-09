@@ -169,6 +169,20 @@
     _height = height;
 }
 
+- (void) setLanguage: (NSString*) lang {
+    _lang = lang;
+}
+
+- (void) setLanguage: (NSString*) langage forLocale: (NSLocale*) locale {
+    
+    NSString* localeStr = @"";
+    if (locale != nil) {
+        localeStr = [[locale objectForKey:NSLocaleCountryCode] uppercaseString];
+    }
+    
+    _lang = [NSString stringWithFormat:@"%@_%@", langage, localeStr];
+}
+
 ////////////////////////////////////////////////////////////////////////////////
 // Getters
 ////////////////////////////////////////////////////////////////////////////////
