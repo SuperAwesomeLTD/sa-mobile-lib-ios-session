@@ -28,6 +28,7 @@ typedef NS_ENUM(NSInteger, SARTBPosition) {
 static inline SARTBPosition getRTBPositionFromInt (int pos) {
     switch (pos) {
         case 1: return  POS_ABOVE_THE_FOLD;
+        case 3: return  POS_BELOW_THE_FOLD;
         default: return POS_FULLSCREEN;
     }
 }
