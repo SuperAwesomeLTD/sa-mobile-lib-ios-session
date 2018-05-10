@@ -1,5 +1,5 @@
 PODS:
-  - SASession (0.3.8):
+  - SASession (1.1.1):
     - SAUtils (= 1.5.5)
   - SAUtils (1.5.5)
 
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SASession: 5ff22cbb312356fa2a4ff921bedb0e032d8beec1
+  SASession: 393ab4abbbddaa5a2d8d21bf10bb06e3f533997d
   SAUtils: 95e06baec2636bfe494d9f8a43ec4def6fb28229
 
 PODFILE CHECKSUM: 9755530b22c9dc48a74d057359843e255e747590

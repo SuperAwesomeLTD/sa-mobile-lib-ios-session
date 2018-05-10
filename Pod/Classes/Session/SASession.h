@@ -5,12 +5,13 @@
 
 #import <UIKit/UIKit.h>
 #import "SASessionDefines.h"
+#import "SASessionProtocol.h"
 
 /**
  * Class that manages an AwesomeAds session, containing all variables 
  * needed to setup loading for a certain ad
  */
-@interface SASession : NSObject
+@interface SASession : NSObject <SASessionProtocol>
 
 - (void) setTestMode:(BOOL) testEnabled;
 - (void) enableTestMode;
@@ -29,25 +30,4 @@
 - (void) setHeight: (NSInteger) height;
 - (void) setLanguage: (NSString*) lang;
 - (void) setLanguage: (NSString*) langage forLocale: (NSLocale*) locale;
-
-- (NSString*) getBaseUrl;
-- (BOOL) getTestMode;
-- (NSUInteger) getDauId;
-- (NSString*) getVersion;
-- (NSInteger) getCachebuster;
-- (NSString*) getBundleId;
-- (NSString*) getAppName;
-- (NSInteger) getConnectivityType;
-- (NSString*) getLang;
-- (NSString*) getDevice;
-- (NSString*) getUserAgent;
-- (SAConfiguration) getConfiguration;
-- (SARTBInstl) getInstl;
-- (SARTBPlaybackMethod) getPlaybackMethod;
-- (SARTBPosition) getPos;
-- (SARTBSkip) getSkip;
-- (SARTBStartDelay) getStartDelay;
-- (NSInteger) getWidth;
-- (NSInteger) getHeight;
-
 @end
